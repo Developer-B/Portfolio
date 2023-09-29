@@ -1,0 +1,128 @@
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+}
+
+.banner {
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+
+.banner img {
+    position: absolute;
+    bottom: 18%;
+    margin-left: 75%;
+    border: 1px solid white;
+}
+
+.heading {
+    position: absolute;
+    z-index: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    left: 5vh;
+    bottom: 50vh;
+}
+
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  .typewriter {
+    position: relative;
+  }
+
+.typewriter::before {
+    content: 'Developer';
+    color: red;
+    animation: words 20s infinite;
+}
+
+.typewriter::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: black;
+    border-left: 2px solid red;
+    right: 1px;
+    animation: typing 2s infinite, typewriter 20s steps(9) infinite;
+}
+
+@keyframes typing {
+    to {
+        border-left: 2px solid red;
+    }
+}
+
+@keyframes words {
+    0%,20% {
+        content: "Developer";
+    }
+    21%,40% {
+        content: "Designer";
+    }
+    41%,60% {
+        content: "Blogger";
+    }
+    61%,80% {
+        content: "Gamer";
+    }
+    81%,100% {
+        content: "Traveller";
+    }
+}
+
+@keyframes typewriter {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+.formbox {
+    position: relative;
+    top: 40vmax;
+    width: 85vh;
+    left: 3%;
+}
+
+.map {
+    position: absolute;
+    width: 90vh;
+    height: 60vh;
+    left: 100vh;
+    bottom: -40px;
+    border-radius: 20px;
+}
+
+.page-footer {
+    position: relative;
+    top: 45vmax;
+    background-color: black;
+    color: white;
+    
+}
+
+#footermain {
+    color: white;
+}
+
